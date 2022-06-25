@@ -7,6 +7,7 @@
     <title>My Week 2 Project</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <nav>
@@ -24,9 +25,41 @@
           <button class="btn"><a href=""></a>Sign Up</button>
         </div>
       </ul>
+
+      <!-- BURGER -->
+
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars" ></i>
+      </button>
+      
+      <div class="menu__backdrop" onclick="closeMenu()">
+        <button class="btn__menu btn__menu--close ">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+          </li>
+          <li class="menu__list">
+            <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+          </li>
+          <li class="menu__list">
+            <button class="btn"><a href=""></a>Sign Up</button>
+          </li>
+        </ul>
+      </div>
     </nav>
     <main>
-      <section id="#landing">
+      <section id="landing" >
         <div class="container__landing row">
           <div class="landing__description">
             <h1 class="landing__title">
@@ -66,7 +99,7 @@
 
       <!-- FEATURES -->
       
-      <section id="features">
+      <section id="features" class="reveal-R">
         <div class="features__container row">
           <div class="features__header">
             <span class="features__span purple">FEATURES</span>
@@ -196,7 +229,7 @@
 
       <!-- QUALITY -->
 
-      <section id="#quality">
+      <section id="#quality" class="reveal-L">
         <div class="quality__container row">
           <div class="quality__description">
             <span class="quality__span purple">QUALITY WORK</span>
@@ -223,8 +256,8 @@
       </section>
 
       <!-- STEPS -->
-      <section id="#steps">
-        <div class="steps_container row">
+      <section id="#steps" class="reveal-R">
+        <div class="steps__containers row">
           <div class="steps__description">
             <span class="steps__span purple">STEPS</span>
             <h2 class="steps__title">
@@ -275,7 +308,7 @@
 
       <!-- VALUES -->
 
-      <section id="#values">
+      <section id="#values" class="reveal-L">
         <div class="values__container row">
           <div class="values__description">
             <span class="values__span purple">VALUES</span>
@@ -335,7 +368,7 @@
 
       <!-- PRICING -->
 
-      <section id="pricing">
+      <section id="pricing" class="reveal-R">
         <div class="pricing__container row">
           <div class="pricing__header">
             <span class="pricing__span purple">PRICING</span>
@@ -417,7 +450,7 @@
 
       <!-- TESTIMONIALS -->
 
-      <section id="#values">
+      <section id="#values" class="reveal-L">
         <div class="testimonials__container row">
           <div class="testimonials__description">
             <span class="testimonials__span purple">TESTIMONIALS</span>
@@ -487,7 +520,7 @@
 
       <!-- FAQS -->
 
-      <section id="faqs">
+      <section id="faqs" class="reveal-R">
         <div class="faqs__container row">
           <div class="faqs__header">
             <span class="faqs__span purple">FAQS</span>
@@ -562,7 +595,7 @@
 
       <!-- DECO -->
 
-      <section id="deco">
+      <section id="deco" class="reveal-L">
         <div class="deco__container row">
           <div class="deco__bloc">
             <h5 class="deco__title">Developers all over the world are happily using Treact.</h5>
@@ -577,7 +610,7 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="reveal-R">
       <div class="footer__bg-color">
         <div class="footer__container row">
           <div class="footer__content">
